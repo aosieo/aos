@@ -1,18 +1,18 @@
 :root {
-  --cream: #fffcf5;
-  --paper: #fffefb;
-  --ink: #1f3d2b;
-  --ink-soft: #3a5947;
-  --blue: #2f5fa6;
-  --pink: #f3dff6;
-  --pink-line: #e3b9ea;
-  --green: #dcefc9;
-  --green-line: #b9d99a;
-  --yellow: #fcecb2;
-  --yellow-line: #edd27f;
+  --cream: #fff8f5;
+  --paper: #ffffff;
+  --ink: #5b3428;
+  --ink-soft: #8a5a48;
+  --blue: #c15b72;
+  --pink: #f8dcd4;
+  --pink-line: #f0b3a4;
+  --green: #fbe0d9;
+  --green-line: #f0b79e;
+  --yellow: #fceaca;
+  --yellow-line: #eac98a;
   --orange: #e2622a;
   --orange-soft: #f2946a;
-  --shadow: rgba(31, 61, 43, 0.1);
+  --shadow: rgba(91, 52, 40, 0.12);
   --radius: 20px;
 }
 
