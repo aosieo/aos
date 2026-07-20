@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aosieo — Jastip China ➜ Indonesia</title>
+<meta name="description" content="Layanan jastip aosieo: WH, rent alamat, handcarry, persod, paper based, jasa CO & convert RMB. Cek rate dan harga terbaru di sini.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:wght@600;700&family=Fredoka:wght@500;600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="#top" class="topbar-logo">aosieo</a>
+    <a class="topbar-cta" id="waTop" href="#" target="_blank" rel="noopener">Chat WA</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-mark">
+        <span class="hero-cursive">aosieo</span>
+        <span class="hero-word">AOSIEO</span>
+      </div>
+      <p class="hero-tagline">Jastip &amp; titip beli China ➜ Indonesia — WH, handcarry, persod, dan jasa CO chat, satu tempat.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" id="waHero" href="#" target="_blank" rel="noopener">💬 Chat WA</a>
+        <a class="btn btn-ghost" href="#layanan">Lihat layanan</a>
+      </div>
+      <svg class="hero-zigzag" viewBox="0 0 140 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="0,14 17,2 35,14 52,2 70,14 87,2 105,14 122,2 140,14" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <nav class="pillnav" aria-label="Lompat ke bagian">
+    <div class="wrap">
+      <a class="pill" data-target="#wh">WH Service</a>
+      <a class="pill" data-target="#rent">Rent Alamat</a>
+      <a class="pill" data-target="#delivery">Delivery</a>
+      <a class="pill" data-target="#persod">Persod</a>
+      <a class="pill" data-target="#paper">Paper Based</a>
+      <a class="pill" data-target="#fee">Other Fee</a>
+      <a class="pill" data-target="#cochat">CO &amp; Rate</a>
+    </div>
+  </nav>
+
+  <div class="wrap" id="layanan">
+
+    <div class="section-grid">
+
+      <section class="section" id="wh">
+        <div class="section-head">
+          <h2>WH Service</h2>
+          <span class="sub" id="whDuration">/ 14 hari</span>
+        </div>
+        <div class="card card--pink">
+          <p class="note" id="whNote">Dihitung berdasarkan berat paket, bukan berat barang</p>
+          <div class="rate-grid" id="whTiers"></div>
+        </div>
+      </section>
+
+      <section class="section" id="rent">
+        <div class="section-head"><h2>Rent Alamat</h2></div>
+        <div class="card card--green">
+          <div class="big-price" id="rentPrice">—<span id="rentPeriod"></span></div>
+          <p class="note" id="rentNote" style="margin-top:10px;"></p>
+        </div>
+      </section>
+
+      <section class="section" id="delivery">
+        <div class="section-head">
+          <h2>CH → INA Delivery</h2>
+          <span class="sub">Handcarry</span>
+        </div>
+        <div class="card card--yellow">
+          <div class="big-price" id="handcarryPrice">—<span> / gr</span></div>
+          <ul class="plain" id="deliveryNotes" style="margin-top:12px;"></ul>
+        </div>
+      </section>
+
+      <section class="section" id="persod">
+        <div class="section-head">
+          <h2>Persod</h2>
+          <span class="sub">Personal Order</span>
+        </div>
+        <div class="card card--pink">
+          <p class="note" id="persodNote" style="font-size:0.95rem;"></p>
+        </div>
+      </section>
+
+      <section class="section" id="paper">
+        <div class="section-head"><h2>Paper Based</h2></div>
+        <div class="card card--green">
+          <div class="rate-grid" id="paperTiers" style="grid-template-columns:1fr;"></div>
+          <p class="note" id="paperNote" style="margin-top:10px;"></p>
+        </div>
+      </section>
+
+      <section class="section" id="fee">
+        <div class="section-head"><h2>Other Fee</h2></div>
+        <div class="card card--yellow">
+          <div class="rate-grid" id="feeTiers"></div>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="section" id="benefit">
+      <div class="section-head"><h2>Benefit</h2></div>
+      <div class="card card--green">
+        <ul class="plain" id="benefitList" style="font-size:0.95rem;"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="cochat">
+      <div class="section-head">
+        <h2 style="color:var(--ink)">Jasa CO &amp; Convert RMB</h2>
+      </div>
+      <div class="rate-panel">
+        <span class="badge" id="openBadge">OPEN</span>
+        <h3>Rate hari ini (wepay / alipay, no fee)</h3>
+        <div class="rate-table" id="rateTable"></div>
+        <div class="co-services" id="coServices"></div>
+        <p class="fineprint" id="rateFineprint" style="margin-top:12px;"></p>
+        <p class="updated" id="rateUpdated"></p>
+      </div>
+    </section>
+
+    <section class="section" id="payment">
+      <div class="section-head"><h2>Payment</h2></div>
+      <div class="pay-row" id="payRow"></div>
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <span class="hero-cursive">aosieo</span>
+    <p>Ada pertanyaan soal ongkir, WH, atau mau CO barang? Chat langsung aja.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" id="waFooter" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a class="btn btn-ghost" id="lineFooter" href="#">Line</a>
+    </div>
+  </div>
+  <p class="credit">aosieo © <span id="year"></span></p>
+</footer>
+
+<a class="sticky-wa" id="waSticky" href="#" target="_blank" rel="noopener">💬 Chat WA</a>
+
+<script src="script.js"></script>
+</body>
+</html>

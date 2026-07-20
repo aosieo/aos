@@ -1,0 +1,83 @@
+{
+  "_howToEdit": "Edit any value below, then commit on GitHub. Vercel redeploys automatically in under a minute. Don't touch the text in quotes on the LEFT of each colon (the keys) — only change what's on the RIGHT.",
+
+  "lastUpdated": "20 Juli 2026",
+
+  "coChatRate": {
+    "openSince": "17 Juli",
+    "idrToRmb": [
+      { "label": "< 200 RMB", "rate": "2705" },
+      { "label": "> 200 RMB", "rate": "2700" }
+    ],
+    "rmbToIdr": "2665",
+    "note": "Rate wepay / alipay, no fee tambahan"
+  },
+
+  "coChatServices": [
+    { "name": "STP", "price": "2,5k" },
+    { "name": "CO app / web CH", "price": "3k" }
+  ],
+
+  "whService": {
+    "duration": "14 hari",
+    "note": "Dihitung berdasarkan berat paket, bukan berat barang",
+    "tiers": [
+      { "weight": "100 gr", "price": "1,5k" },
+      { "weight": "300 gr", "price": "2,5k" },
+      { "weight": "800 gr", "price": "3,5k" },
+      { "weight": "1500 gr", "price": "5k" },
+      { "weight": "2500 gr", "price": "6k" },
+      { "weight": "3500 gr", "price": "8k" }
+    ]
+  },
+
+  "rentAlamat": {
+    "price": "135k",
+    "period": "/ bulan",
+    "note": "Unlimited paket, maksimal total 20 kg"
+  },
+
+  "delivery": {
+    "handcarry": "190 - 250 / gr",
+    "notes": [
+      "Shipment by request",
+      "Minimum 1 kg",
+      "Pajak belum termasuk (jika ada)"
+    ]
+  },
+
+  "personalOrder": {
+    "note": "Persod (personal order) di luar jadwal handcarry, minimum 1 kg"
+  },
+
+  "paperBased": {
+    "tiers": [
+      { "range": "< 30 pcs", "price": "4k / pcs" },
+      { "range": "< 50 pcs", "price": "3,5k / pcs" },
+      { "range": "< 100 pcs", "price": "3k / pcs" }
+    ],
+    "note": "Termasuk photocard / postcard"
+  },
+
+  "otherFee": [
+    { "label": "Repack < 1 kg", "price": "3k" },
+    { "label": "Repack < 5 kg", "price": "5k" },
+    { "label": "Repack < 8 kg", "price": "10k" },
+    { "label": "Domestic delivery fee (ID / CH)", "price": "sesuai ongkir" }
+  ],
+
+  "benefits": [
+    "Free CO fee & chat fee (reasonable)",
+    "Bisa repack to forward — hanya bayar ongkir domestic + fee WH",
+    "Free foto saat barang arrived",
+    "No max keep barang"
+  ],
+
+  "payment": ["Transfer Bank", "QRIS", "ShopeePay", "GoPay"],
+
+  "contact": {
+    "whatsapp": "6281280596057",
+    "whatsappDisplay": "+62 812-8059-6057",
+    "line": "aosieo the"
+  }
+}
